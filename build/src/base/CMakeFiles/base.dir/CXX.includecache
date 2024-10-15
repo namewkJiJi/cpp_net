@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jj/tmms/src/base/FileLog.cpp
+FileLog.h
+/home/jj/tmms/src/base/FileLog.h
+fcntl.h
+-
+unistd.h
+-
+sys/stat.h
+-
+sys/types.h
+-
+iostream
+-
+StringUtils.h
+/home/jj/tmms/src/base/StringUtils.h
+sys/stat.h
+-
+sys/types.h
+-
+cstring
+-
+cerrno
+-
+
+/home/jj/tmms/src/base/FileLog.h
+string
+-
+
+/home/jj/tmms/src/base/StringUtils.h
+string
+-
+vector
+-
+

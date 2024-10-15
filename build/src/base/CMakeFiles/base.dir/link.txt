@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../lib/base/libbase.a  CMakeFiles/base.dir/Config.cpp.o CMakeFiles/base.dir/FileLog.cpp.o CMakeFiles/base.dir/FileMgr.cpp.o CMakeFiles/base.dir/LogStream.cpp.o CMakeFiles/base.dir/Logger.cpp.o CMakeFiles/base.dir/StringUtils.cpp.o CMakeFiles/base.dir/TTime.cpp.o CMakeFiles/base.dir/Task.cpp.o CMakeFiles/base.dir/TaskMgr.cpp.o CMakeFiles/base.dir/test.cpp.o
+/usr/bin/ranlib ../../../lib/base/libbase.a
