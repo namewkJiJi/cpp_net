@@ -17,6 +17,8 @@ set(CMAKE_INSTALL_PREFIX ../bin)
 # 指定引用头文件路径
 include_directories(${PROJECT_SOURCE_DIR}/lib/json/include/)
 include_directories(${PROJECT_SOURCE_DIR}/src/base/)
+include_directories(${PROJECT_SOURCE_DIR}/src/network/base)
+include_directories(${PROJECT_SOURCE_DIR}/src/network/net)
 
 
 # 指定链接库路径

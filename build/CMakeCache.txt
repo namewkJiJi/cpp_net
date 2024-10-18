@@ -225,6 +225,21 @@ main_BINARY_DIR:STATIC=/home/jj/tmms/build/src/main
 main_SOURCE_DIR:STATIC=/home/jj/tmms/src/main
 
 //Value Computed by CMake
+net_test_BINARY_DIR:STATIC=/home/jj/tmms/build/src/network/net/test
+
+//Value Computed by CMake
+net_test_SOURCE_DIR:STATIC=/home/jj/tmms/src/network/net/test
+
+//Value Computed by CMake
+network_BINARY_DIR:STATIC=/home/jj/tmms/build/src/network
+
+//Dependencies for the target
+network_LIB_DEPENDS:STATIC=general;base;
+
+//Value Computed by CMake
+network_SOURCE_DIR:STATIC=/home/jj/tmms/src/network
+
+//Value Computed by CMake
 src_BINARY_DIR:STATIC=/home/jj/tmms/build/src
 
 //Value Computed by CMake
@@ -341,7 +356,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

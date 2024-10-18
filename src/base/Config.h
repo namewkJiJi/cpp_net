@@ -12,13 +12,15 @@
 
 namespace tmms{
     namespace base{
-        struct LogInfo{
-            LogLevel level;
-            std::string path;
-            std::string name;
-            RotateType rotate_type{kRotateNone};
-        };
 
+        // 日志信息
+        struct LogInfo{
+            LogLevel level;//日志级别
+            std::string path;//日志文件所在文件夹的路径
+            std::string name;//日志文件名
+            RotateType rotate_type{kRotateNone};//日志切分类型
+        };
+        
         using LogInfoPtr = std::shared_ptr<LogInfo>;
 
         class Config{

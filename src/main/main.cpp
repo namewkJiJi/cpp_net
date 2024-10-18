@@ -18,6 +18,8 @@ int main(){
     }
 
     ConfigPtr config = sConfigMgr->GetConfig();
+    std::cout<<"Config loaded"<<std::endl;
+
     LogInfoPtr log_info = config->GetLogInfo();
     std::cout<<"Log Level: "<<log_info->level
             <<", Log name: "<<log_info->name
@@ -46,6 +48,7 @@ int main(){
     sTaskMgr->AddTask(task);
 
     while(1){
+        std::cout<<"Task On Work.."<<std::endl;
         sTaskMgr->OnWork();
         std::this_thread::sleep_for(std::chrono::milliseconds(50));
     }

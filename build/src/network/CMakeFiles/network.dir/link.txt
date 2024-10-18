@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnetwork.a  CMakeFiles/network.dir/net/Event.cpp.o CMakeFiles/network.dir/net/EventLoop.cpp.o CMakeFiles/network.dir/net/EventLoopThread.cpp.o CMakeFiles/network.dir/net/EventLoopThreadPool.cpp.o CMakeFiles/network.dir/net/PipeEvent.cpp.o
+/usr/bin/ranlib libnetwork.a

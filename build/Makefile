@@ -170,6 +170,32 @@ base/fast:
 .PHONY : base/fast
 
 #=============================================================================
+# Target rules for targets named network
+
+# Build rule for target.
+network: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 network
+.PHONY : network
+
+# fast build rule for target.
+network/fast:
+	$(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/build
+.PHONY : network/fast
+
+#=============================================================================
+# Target rules for targets named EventLoopThreadTest
+
+# Build rule for target.
+EventLoopThreadTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 EventLoopThreadTest
+.PHONY : EventLoopThreadTest
+
+# fast build rule for target.
+EventLoopThreadTest/fast:
+	$(MAKE) -f src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/build.make src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/build
+.PHONY : EventLoopThreadTest/fast
+
+#=============================================================================
 # Target rules for targets named main
 
 # Build rule for target.
@@ -195,6 +221,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... base"
+	@echo "... network"
+	@echo "... EventLoopThreadTest"
 	@echo "... main"
 .PHONY : help
 

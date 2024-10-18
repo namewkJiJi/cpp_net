@@ -6,5 +6,5 @@ CXX_FLAGS = -Wno-error=unused-result -Werror=return-type  -std=c++11 -O3 -g -pip
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jj/tmms/lib/json/include -I/home/jj/tmms/src/base 
+CXX_INCLUDES = -I/home/jj/tmms/lib/json/include -I/home/jj/tmms/src/base -I/home/jj/tmms/src/network/base -I/home/jj/tmms/src/network/net 
 
