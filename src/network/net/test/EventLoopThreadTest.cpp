@@ -41,21 +41,43 @@ void TestEventLoopThreadPool(){
     EventLoopThreadPool pool(2,0,2);
 
     pool.Start();
-    std::cout<<"thread id : "<<std::this_thread::get_id()<<std::endl;
+    // std::cout<<"thread id : "<<std::this_thread::get_id()<<std::endl;
 
-    std::vector<EventLoop *> list = pool.GetLoops();
-    for(auto & loop : list){
-        loop->RunInLoop([&loop](){
-            std::cout << "loop :"<< loop <<" thread id : "<<std::this_thread::get_id()<< std::endl;
-        });
+    // std::vector<EventLoop *> list = pool.GetLoops();
+    // for(auto & loop : list){
+    //     loop->RunInLoop([&loop](){
+    //         std::cout << "loop :"<< loop <<" thread id : "<<std::this_thread::get_id()<< std::endl;
+    //     });
         
-    }
+    // }
 
     // EventLoop * loop = pool.GetNextLoop();
     // std::cout << "loop :"<< loop << std::endl;
 
-    // loop = pool.GetNextLoop();
-    // std::cout << "loop :"<< loop << std::endl;
+    EventLoop * loop = pool.GetNextLoop();
+    std::cout << "loop :"<< loop << std::endl;
+    loop->RunAfter(1,[](){
+        std::cout << "run after 1s now : "<< tmms::base::TTime::Now() << std::endl;
+    });
+
+    loop->RunAfter(5,[](){
+        std::cout << "run after 5s now : "<< tmms::base::TTime::Now() << std::endl;
+    });
+
+    loop->RunEvery(1,[](){
+        std::cout << "run every 1s now : "<< tmms::base::TTime::Now() << std::endl;
+    });
+
+    loop->RunEvery(5,[](){
+        std::cout << "run every 5s now : "<< tmms::base::TTime::Now() << std::endl;
+    });
+
+    //不退出这个函数
+    //一旦退出会析构掉线程池
+    //析构后会出现问题？？
+    while(1){
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+    }
 
 }
 

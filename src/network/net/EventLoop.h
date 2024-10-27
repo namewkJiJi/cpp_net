@@ -2,6 +2,7 @@
 
 #include "Event.h"
 #include "PipeEvent.h"
+#include "TimingWheel.h"
 #include <sys/epoll.h>
 #include <vector>
 #include <memory>
@@ -33,7 +34,16 @@ namespace tmms{
             void RunInLoop(const Func& f);
             void RunInLoop(Func&& f);
 
+            void InsertEntry(uint32_t delay,EntryPtr entryPtr);
+            void RunAfter(double delay,const Func & cb);
+            void RunAfter(double delay,Func && cb);
+            void RunEvery(double interval, const Func & cb);
+            void RunEvery(double interval, Func && cb);
+
         private:
+            //处理事件
+            bool HandleEvent(struct epoll_event& ev);    
+
             void RunFunctions();
             void WakeUp();
 
@@ -45,6 +55,9 @@ namespace tmms{
             std::queue<Func> fucntions_;
             std::mutex lock_;
             PipeEventPtr pipe_event_;
+
+            TimingWheel wheel_;
+        
         };
         
     }

@@ -157,46 +157,46 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/rule:
-	cd /home/jj/tmms/build && $(MAKE) -f CMakeFiles/Makefile2 src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/rule
-.PHONY : src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/rule
+src/network/net/test/CMakeFiles/TcpConTest.dir/rule:
+	cd /home/jj/tmms/build && $(MAKE) -f CMakeFiles/Makefile2 src/network/net/test/CMakeFiles/TcpConTest.dir/rule
+.PHONY : src/network/net/test/CMakeFiles/TcpConTest.dir/rule
 
 # Convenience name for target.
-EventLoopThreadTest: src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/rule
+TcpConTest: src/network/net/test/CMakeFiles/TcpConTest.dir/rule
 
-.PHONY : EventLoopThreadTest
+.PHONY : TcpConTest
 
 # fast build rule for target.
-EventLoopThreadTest/fast:
-	cd /home/jj/tmms/build && $(MAKE) -f src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/build.make src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/build
-.PHONY : EventLoopThreadTest/fast
+TcpConTest/fast:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/net/test/CMakeFiles/TcpConTest.dir/build.make src/network/net/test/CMakeFiles/TcpConTest.dir/build
+.PHONY : TcpConTest/fast
 
-EventLoopThreadTest.o: EventLoopThreadTest.cpp.o
+TcpConTest.o: TcpConTest.cpp.o
 
-.PHONY : EventLoopThreadTest.o
+.PHONY : TcpConTest.o
 
 # target to build an object file
-EventLoopThreadTest.cpp.o:
-	cd /home/jj/tmms/build && $(MAKE) -f src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/build.make src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/EventLoopThreadTest.cpp.o
-.PHONY : EventLoopThreadTest.cpp.o
+TcpConTest.cpp.o:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/net/test/CMakeFiles/TcpConTest.dir/build.make src/network/net/test/CMakeFiles/TcpConTest.dir/TcpConTest.cpp.o
+.PHONY : TcpConTest.cpp.o
 
-EventLoopThreadTest.i: EventLoopThreadTest.cpp.i
+TcpConTest.i: TcpConTest.cpp.i
 
-.PHONY : EventLoopThreadTest.i
+.PHONY : TcpConTest.i
 
 # target to preprocess a source file
-EventLoopThreadTest.cpp.i:
-	cd /home/jj/tmms/build && $(MAKE) -f src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/build.make src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/EventLoopThreadTest.cpp.i
-.PHONY : EventLoopThreadTest.cpp.i
+TcpConTest.cpp.i:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/net/test/CMakeFiles/TcpConTest.dir/build.make src/network/net/test/CMakeFiles/TcpConTest.dir/TcpConTest.cpp.i
+.PHONY : TcpConTest.cpp.i
 
-EventLoopThreadTest.s: EventLoopThreadTest.cpp.s
+TcpConTest.s: TcpConTest.cpp.s
 
-.PHONY : EventLoopThreadTest.s
+.PHONY : TcpConTest.s
 
 # target to generate assembly for a file
-EventLoopThreadTest.cpp.s:
-	cd /home/jj/tmms/build && $(MAKE) -f src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/build.make src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/EventLoopThreadTest.cpp.s
-.PHONY : EventLoopThreadTest.cpp.s
+TcpConTest.cpp.s:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/net/test/CMakeFiles/TcpConTest.dir/build.make src/network/net/test/CMakeFiles/TcpConTest.dir/TcpConTest.cpp.s
+.PHONY : TcpConTest.cpp.s
 
 # Help Target
 help:
@@ -210,10 +210,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... EventLoopThreadTest"
-	@echo "... EventLoopThreadTest.o"
-	@echo "... EventLoopThreadTest.i"
-	@echo "... EventLoopThreadTest.s"
+	@echo "... TcpConTest"
+	@echo "... TcpConTest.o"
+	@echo "... TcpConTest.i"
+	@echo "... TcpConTest.s"
 .PHONY : help
 
 

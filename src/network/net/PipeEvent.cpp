@@ -52,5 +52,5 @@ void PipeEvent::OnError(const std::string & msg){
 }
 
 void PipeEvent::Write(const char * data ,size_t len){
-    write(write_fd_,data,len);
+    auto res = write(write_fd_,data,len);
 }

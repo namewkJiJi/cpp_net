@@ -15,10 +15,7 @@ Event::Event(EventLoop* loop, int fd)
 }
 
 Event::~Event(){
-    if(fd_>0){
-        close(fd_);
-        fd_=-1;
-    }   
+    Close();
 }
 
 int Event::Fd() const{
@@ -31,4 +28,11 @@ bool Event::EnableWriting(bool enable){
 
 bool Event::EnableReading(bool enable){
     return loop_->EnableEventReading(shared_from_this(),enable);
+}
+
+void Event::Close(){
+    if(fd_>0){
+        close(fd_);
+        fd_=-1;
+    }
 }

@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/sbin/EventLoopThreadTest" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/sbin/EventLoopThreadTest")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/sbin/test/TcpConTest" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/sbin/test/TcpConTest")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/sbin/EventLoopThreadTest"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/sbin/test/TcpConTest"
          RPATH "/home/jj/tmms/lib/json/lib")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/sbin" TYPE EXECUTABLE FILES "/home/jj/tmms/build/src/network/net/test/EventLoopThreadTest")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/sbin/EventLoopThreadTest" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/sbin/EventLoopThreadTest")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/sbin/test" TYPE EXECUTABLE FILES "/home/jj/tmms/build/src/network/net/test/TcpConTest")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/sbin/test/TcpConTest" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/sbin/test/TcpConTest")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/sbin/EventLoopThreadTest"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/sbin/test/TcpConTest"
          OLD_RPATH "/home/jj/tmms/lib/json/lib:/home/jj/tmms/lib/base:"
          NEW_RPATH "/home/jj/tmms/lib/json/lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/sbin/EventLoopThreadTest")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/sbin/test/TcpConTest")
     endif()
   endif()
 endif()

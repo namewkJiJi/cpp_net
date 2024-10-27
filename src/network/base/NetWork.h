@@ -1,3 +1,4 @@
+// 对接口进行封装，让network更有可移植性
 # pragma once 
 
 #include "LogStream.h"

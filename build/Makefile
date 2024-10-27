@@ -183,17 +183,17 @@ network/fast:
 .PHONY : network/fast
 
 #=============================================================================
-# Target rules for targets named EventLoopThreadTest
+# Target rules for targets named TcpConTest
 
 # Build rule for target.
-EventLoopThreadTest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 EventLoopThreadTest
-.PHONY : EventLoopThreadTest
+TcpConTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TcpConTest
+.PHONY : TcpConTest
 
 # fast build rule for target.
-EventLoopThreadTest/fast:
-	$(MAKE) -f src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/build.make src/network/net/test/CMakeFiles/EventLoopThreadTest.dir/build
-.PHONY : EventLoopThreadTest/fast
+TcpConTest/fast:
+	$(MAKE) -f src/network/net/test/CMakeFiles/TcpConTest.dir/build.make src/network/net/test/CMakeFiles/TcpConTest.dir/build
+.PHONY : TcpConTest/fast
 
 #=============================================================================
 # Target rules for targets named main
@@ -222,7 +222,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... base"
 	@echo "... network"
-	@echo "... EventLoopThreadTest"
+	@echo "... TcpConTest"
 	@echo "... main"
 .PHONY : help
 

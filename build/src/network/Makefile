@@ -171,6 +171,141 @@ network/fast:
 	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/build
 .PHONY : network/fast
 
+base/InetAddress.o: base/InetAddress.cpp.o
+
+.PHONY : base/InetAddress.o
+
+# target to build an object file
+base/InetAddress.cpp.o:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/base/InetAddress.cpp.o
+.PHONY : base/InetAddress.cpp.o
+
+base/InetAddress.i: base/InetAddress.cpp.i
+
+.PHONY : base/InetAddress.i
+
+# target to preprocess a source file
+base/InetAddress.cpp.i:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/base/InetAddress.cpp.i
+.PHONY : base/InetAddress.cpp.i
+
+base/InetAddress.s: base/InetAddress.cpp.s
+
+.PHONY : base/InetAddress.s
+
+# target to generate assembly for a file
+base/InetAddress.cpp.s:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/base/InetAddress.cpp.s
+.PHONY : base/InetAddress.cpp.s
+
+base/MsgBuffer.o: base/MsgBuffer.cpp.o
+
+.PHONY : base/MsgBuffer.o
+
+# target to build an object file
+base/MsgBuffer.cpp.o:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/base/MsgBuffer.cpp.o
+.PHONY : base/MsgBuffer.cpp.o
+
+base/MsgBuffer.i: base/MsgBuffer.cpp.i
+
+.PHONY : base/MsgBuffer.i
+
+# target to preprocess a source file
+base/MsgBuffer.cpp.i:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/base/MsgBuffer.cpp.i
+.PHONY : base/MsgBuffer.cpp.i
+
+base/MsgBuffer.s: base/MsgBuffer.cpp.s
+
+.PHONY : base/MsgBuffer.s
+
+# target to generate assembly for a file
+base/MsgBuffer.cpp.s:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/base/MsgBuffer.cpp.s
+.PHONY : base/MsgBuffer.cpp.s
+
+base/SocketOpt.o: base/SocketOpt.cpp.o
+
+.PHONY : base/SocketOpt.o
+
+# target to build an object file
+base/SocketOpt.cpp.o:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/base/SocketOpt.cpp.o
+.PHONY : base/SocketOpt.cpp.o
+
+base/SocketOpt.i: base/SocketOpt.cpp.i
+
+.PHONY : base/SocketOpt.i
+
+# target to preprocess a source file
+base/SocketOpt.cpp.i:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/base/SocketOpt.cpp.i
+.PHONY : base/SocketOpt.cpp.i
+
+base/SocketOpt.s: base/SocketOpt.cpp.s
+
+.PHONY : base/SocketOpt.s
+
+# target to generate assembly for a file
+base/SocketOpt.cpp.s:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/base/SocketOpt.cpp.s
+.PHONY : base/SocketOpt.cpp.s
+
+net/Acceptor.o: net/Acceptor.cpp.o
+
+.PHONY : net/Acceptor.o
+
+# target to build an object file
+net/Acceptor.cpp.o:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/net/Acceptor.cpp.o
+.PHONY : net/Acceptor.cpp.o
+
+net/Acceptor.i: net/Acceptor.cpp.i
+
+.PHONY : net/Acceptor.i
+
+# target to preprocess a source file
+net/Acceptor.cpp.i:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/net/Acceptor.cpp.i
+.PHONY : net/Acceptor.cpp.i
+
+net/Acceptor.s: net/Acceptor.cpp.s
+
+.PHONY : net/Acceptor.s
+
+# target to generate assembly for a file
+net/Acceptor.cpp.s:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/net/Acceptor.cpp.s
+.PHONY : net/Acceptor.cpp.s
+
+net/Connection.o: net/Connection.cpp.o
+
+.PHONY : net/Connection.o
+
+# target to build an object file
+net/Connection.cpp.o:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/net/Connection.cpp.o
+.PHONY : net/Connection.cpp.o
+
+net/Connection.i: net/Connection.cpp.i
+
+.PHONY : net/Connection.i
+
+# target to preprocess a source file
+net/Connection.cpp.i:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/net/Connection.cpp.i
+.PHONY : net/Connection.cpp.i
+
+net/Connection.s: net/Connection.cpp.s
+
+.PHONY : net/Connection.s
+
+# target to generate assembly for a file
+net/Connection.cpp.s:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/net/Connection.cpp.s
+.PHONY : net/Connection.cpp.s
+
 net/Event.o: net/Event.cpp.o
 
 .PHONY : net/Event.o
@@ -306,6 +441,60 @@ net/PipeEvent.cpp.s:
 	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/net/PipeEvent.cpp.s
 .PHONY : net/PipeEvent.cpp.s
 
+net/TcpConnection.o: net/TcpConnection.cpp.o
+
+.PHONY : net/TcpConnection.o
+
+# target to build an object file
+net/TcpConnection.cpp.o:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/net/TcpConnection.cpp.o
+.PHONY : net/TcpConnection.cpp.o
+
+net/TcpConnection.i: net/TcpConnection.cpp.i
+
+.PHONY : net/TcpConnection.i
+
+# target to preprocess a source file
+net/TcpConnection.cpp.i:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/net/TcpConnection.cpp.i
+.PHONY : net/TcpConnection.cpp.i
+
+net/TcpConnection.s: net/TcpConnection.cpp.s
+
+.PHONY : net/TcpConnection.s
+
+# target to generate assembly for a file
+net/TcpConnection.cpp.s:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/net/TcpConnection.cpp.s
+.PHONY : net/TcpConnection.cpp.s
+
+net/TimingWheel.o: net/TimingWheel.cpp.o
+
+.PHONY : net/TimingWheel.o
+
+# target to build an object file
+net/TimingWheel.cpp.o:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/net/TimingWheel.cpp.o
+.PHONY : net/TimingWheel.cpp.o
+
+net/TimingWheel.i: net/TimingWheel.cpp.i
+
+.PHONY : net/TimingWheel.i
+
+# target to preprocess a source file
+net/TimingWheel.cpp.i:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/net/TimingWheel.cpp.i
+.PHONY : net/TimingWheel.cpp.i
+
+net/TimingWheel.s: net/TimingWheel.cpp.s
+
+.PHONY : net/TimingWheel.s
+
+# target to generate assembly for a file
+net/TimingWheel.cpp.s:
+	cd /home/jj/tmms/build && $(MAKE) -f src/network/CMakeFiles/network.dir/build.make src/network/CMakeFiles/network.dir/net/TimingWheel.cpp.s
+.PHONY : net/TimingWheel.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -319,6 +508,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... network"
+	@echo "... base/InetAddress.o"
+	@echo "... base/InetAddress.i"
+	@echo "... base/InetAddress.s"
+	@echo "... base/MsgBuffer.o"
+	@echo "... base/MsgBuffer.i"
+	@echo "... base/MsgBuffer.s"
+	@echo "... base/SocketOpt.o"
+	@echo "... base/SocketOpt.i"
+	@echo "... base/SocketOpt.s"
+	@echo "... net/Acceptor.o"
+	@echo "... net/Acceptor.i"
+	@echo "... net/Acceptor.s"
+	@echo "... net/Connection.o"
+	@echo "... net/Connection.i"
+	@echo "... net/Connection.s"
 	@echo "... net/Event.o"
 	@echo "... net/Event.i"
 	@echo "... net/Event.s"
@@ -334,6 +538,12 @@ help:
 	@echo "... net/PipeEvent.o"
 	@echo "... net/PipeEvent.i"
 	@echo "... net/PipeEvent.s"
+	@echo "... net/TcpConnection.o"
+	@echo "... net/TcpConnection.i"
+	@echo "... net/TcpConnection.s"
+	@echo "... net/TimingWheel.o"
+	@echo "... net/TimingWheel.i"
+	@echo "... net/TimingWheel.s"
 .PHONY : help
 
 

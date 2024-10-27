@@ -1,2 +1,2 @@
-/home/jj/tmms/build/../bin/sbin/EventLoopThreadTest
+/home/jj/tmms/build/../bin/sbin/test/TcpConTest
 /home/jj/tmms/build/../bin/sbin/main
